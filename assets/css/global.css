@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+#header {
+    min-height: 100vh;
+    background-image: url(/assets/imgs/bk.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar {
+    display: flex;
+    padding: 16px;
+    font-size: sans-serif;
+}
+
+.Navbar__items {
+    display: flex;
+}
+
+.Navbar__Link {
+    padding-right: 8px;
+}
+
+.Navbar__items--right {
+    margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+#header .text {
+    margin: auto;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+#header .icons ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+}
+
+#header .icons {
+    margin: auto;
+    text-align: center;
+}
+
+#header .icons img {
+    width: 25%;
+}
+
+
+#services {
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 1.5rem;
+}
+
+#services .cards .card img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#portfolio {
+    column-count: 4;
+    column-gap: 20px;
+}
+
+#portfolio img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#portfolio p {
+    column-count: 3;
+    column-gap: 2em;
+    column-rule: solid 3px black;
+}
+
+#contact {
+    background-color: #dfe4de;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+#footer {
+    font-size: .8rem;
+    text-align: center;
+}
