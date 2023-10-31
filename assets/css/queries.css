@@ -1,10 +1,16 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .Navbar .Navbar__title img {
+        width: 35%;
+        position: absolute;
+    }
+
     .Navbar__items, .Navbar {
         flex-direction: column;
     }
 
     .Navbar__items {
         display: none;
+        margin-top: 30px;
     }
 
     .Navbar__items--right {
@@ -21,10 +27,99 @@
         position: absolute;
         cursor: pointer;
     }
+
+    #header .text {
+        margin-top: 200px;
+    }
+
+    #header .icons img {
+        width: 25%;
+    }
+
+    #services .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    #portfolio .portfolio-galery {
+        column-count: 3;
+        column-gap: 10px;
+    }
+
+    #about .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about .about-container img {
+        width: 40%;
+    }
+
+    #contact {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact p {
+        margin: 0;
+    }
+
+    #contact ul {
+        display: flex;
+        list-style: none;
+        margin: 20px auto 10px;
+        width: 100%;
+    }
+
+    #contact img {
+        width: 25%;
+    }
 }
 
+
+
 @media only screen and (max-width: 480px) {
-    #services {
+    .Navbar .Navbar__title img {
+        width: 35%;
+        position: absolute;
+    }
+
+    .Navbar__items, .Navbar {
+        flex-direction: column;
+    }
+
+    .Navbar__items {
+        display: none;
+        margin-top: 30px;
+    }
+
+    .Navbar__items--right {
+        margin-right: 0;
+    }
+
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+
+    .Navbar__Link-toggle {
+        display: initial;
+        align-self: flex-end;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    #header .text {
+        margin-top: 200px;
+    }
+
+    #header .icons img {
+        width: 25%;
+    }
+
+    #services .cards {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
@@ -42,12 +137,14 @@
         text-align: justify;
     }
 
-    #portfolio {
+    #portfolio .portfolio-galery {
         column-count: 2;
         column-gap: 10px;
     }
 
-    #about {
+    #about .about-container {
+        display: flex;
+        flex-direction: column;
         width: 80%;
         margin: auto;
         text-align: center;
@@ -59,10 +156,13 @@
 
     #contact {
         padding: 16px;
+        display: flex;
+        flex-direction: column;
     }
 
     #contact ul {
         display: flex;
+        width: 100%;
         list-style: none;
         margin: 20px auto 10px;
     }

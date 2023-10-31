@@ -12,16 +12,23 @@ a {
 
 #header {
     min-height: 100vh;
-    background-image: url(/assets/imgs/bk.jpg);
+    background-image: url(/assets/imgs/bg.jpg);
     background-size: cover;
+    background-position: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .Navbar {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     padding: 16px;
     font-size: sans-serif;
+}
+
+.Navbar .Navbar__title img {
+    width: 50%;
 }
 
 .Navbar__items {
@@ -29,7 +36,12 @@ a {
 }
 
 .Navbar__Link {
+    color: #fff;
+}
+
+.Navbar__Link a {
     padding-right: 8px;
+    color: #fff;
 }
 
 .Navbar__items--right {
@@ -60,7 +72,7 @@ a {
 }
 
 #header .icons img {
-    width: 25%;
+    width: 15%;
 }
 
 
@@ -72,14 +84,36 @@ a {
     font-size: 1.5rem;
 }
 
+#services .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#services .cards .card {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 1px 1px 20px 1px;
+    padding: 15px;
+}
+
 #services .cards .card img {
     width: 40%;
     margin-bottom: 20px;
 }
 
 #portfolio {
+    padding: 16px;
+}
+
+#portfolio .portfolio-galery {
     column-count: 4;
     column-gap: 20px;
+}
+
+#portfolio h2 {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 #portfolio img {
@@ -94,10 +128,75 @@ a {
     column-rule: solid 3px black;
 }
 
+#portfolio .btn {
+    background-color: #dfe4de;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#portfolio .btn:hover {
+    background: #a5aaa4;
+    text-decoration: none;
+}
+
+#about {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#about img {
+    width: 50%;
+}
+
 #contact {
     background-color: #dfe4de;
     text-align: center;
     margin: 20px 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contact h2 {
+    display: none;
+}
+
+#contact p {
+    margin: 0 10px;
+}
+
+#contact img {
+    width: 45%;
+}
+
+#contact ul {
+    display: flex;
+    list-style: none;
+    margin: 20px auto 10px;
+    width: 30%;
+}
+
+#contact ul li {
+    margin: 0;
 }
 
 
