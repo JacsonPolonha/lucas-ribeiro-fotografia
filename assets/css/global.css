@@ -12,7 +12,7 @@ a {
 
 #header {
     min-height: 100vh;
-    background-image: url(/assets/imgs/bg.jpg);
+    background-image: url('/assets/imgs/bg.jpg');
     background-size: cover;
     background-position: 50%;
     display: flex;
@@ -81,7 +81,7 @@ a {
 }
 
 #services h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #services .cards {
@@ -93,6 +93,7 @@ a {
     width: 80%;
     margin: 20px auto;
     text-align: center;
+    font-size: 1.2rem;
     box-shadow: 1px 1px 20px 1px;
     padding: 15px;
 }
@@ -114,6 +115,7 @@ a {
 #portfolio h2 {
     margin-bottom: 30px;
     text-align: center;
+    font-size: 2rem;
 }
 
 #portfolio img {
@@ -154,11 +156,16 @@ a {
     align-items: center;
 }
 
+#about h2 {
+    font-size: 2rem;
+}
+
 #about .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
+    font-size: 1.5rem;
 }
 
 #about img {
